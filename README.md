@@ -23,3 +23,10 @@ $generator->generateLeads(10000, function (Lead $lead) {
     //TODO: send lead to handling
 });
 ```
+
+## Running
+```bash
+docker compose up -d
+docker compose exec php bash
+php src/Commands/GenerateLeadsCommand.php
+```
